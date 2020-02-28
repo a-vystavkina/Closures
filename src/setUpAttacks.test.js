@@ -1,4 +1,4 @@
-import findBy from '../findBy';
+import findBy from './js/findBy';
 
 test('Проверка по полю name', () => {
   const finder = findBy('name', 'урон');
@@ -39,7 +39,7 @@ test('Проверка type на несколько результатов', () 
 });
 
 test('Проверка без результатов', () => {
-  const finder = findBy();
+  const finder = findBy(' ', ' ');
   const expected = false;
   const received = finder({ name: 'урон' });
   expect(received).toBe(expected);

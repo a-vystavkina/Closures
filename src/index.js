@@ -1,4 +1,4 @@
-import findBy from './findBy';
+import findBy from './js/findBy';
 
 const finder = findBy('name', 'урон');
 const results = [
